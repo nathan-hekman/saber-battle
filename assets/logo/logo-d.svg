@@ -1,0 +1,18 @@
+<!-- D: Single Saber — vertical lightsaber icon, clean and iconic -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 64">
+  <!-- Blade tip (pointed) -->
+  <polygon points="12,2 14.5,7 9.5,7" fill="#99ddff"/>
+  <!-- Blade body -->
+  <rect x="10" y="7" width="4" height="36" fill="#2288ff" rx="1"/>
+  <!-- Blade center highlight -->
+  <rect x="11" y="7" width="1.5" height="36" fill="#aaeeff" rx="0.75" opacity="0.7"/>
+  <!-- Crossguard -->
+  <rect x="4"  y="43" width="16" height="4" fill="#8898c8" rx="2"/>
+  <!-- Grip -->
+  <rect x="10" y="47" width="4" height="11" fill="#3a4880" rx="1.5"/>
+  <!-- Grip bands -->
+  <rect x="9.5" y="50" width="5" height="1.5" fill="#5566aa" rx="0.5"/>
+  <rect x="9.5" y="53" width="5" height="1.5" fill="#5566aa" rx="0.5"/>
+  <!-- Pommel -->
+  <ellipse cx="12" cy="60" rx="4" ry="2.5" fill="#4455a0"/>
+</svg>

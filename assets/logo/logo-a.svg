@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <radialGradient id="a-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#101030"/>
+      <stop offset="100%" stop-color="#04040e"/>
+    </radialGradient>
+  </defs>
+  <circle cx="24" cy="24" r="23.5" fill="url(#a-bg)"/>
+
+  <!-- Red saber: hilt NW, blade tip SE — rotate +45° -->
+  <g transform="rotate(45 24 24)">
+    <rect x="7" y="21.5" width="9" height="5" fill="#3a4880" rx="1"/>
+    <rect x="14" y="18" width="4" height="12" fill="#8898c8" rx="2"/>
+    <rect x="18" y="22" width="22" height="4" fill="#cc2200" rx="1.5"/>
+    <rect x="18" y="22.3" width="22" height="1.8" fill="#ff8866" rx="0.9" opacity="0.55"/>
+  </g>
+
+  <!-- Blue saber: hilt SW, blade tip NE — rotate -45° -->
+  <g transform="rotate(-45 24 24)">
+    <rect x="7" y="21.5" width="9" height="5" fill="#3a4880" rx="1"/>
+    <rect x="14" y="18" width="4" height="12" fill="#8898c8" rx="2"/>
+    <rect x="18" y="22" width="22" height="4" fill="#1177ff" rx="1.5"/>
+    <rect x="18" y="22.3" width="22" height="1.8" fill="#77ccff" rx="0.9" opacity="0.55"/>
+  </g>
+
+  <!-- Impact diamond at crossing center -->
+  <polygon points="24,19 29,24 24,29 19,24" fill="white"/>
+  <circle cx="24" cy="24" r="2.2" fill="white"/>
+
+  <circle cx="24" cy="24" r="23.5" fill="none" stroke="#334488" stroke-width="0.8" opacity="0.5"/>
+</svg>

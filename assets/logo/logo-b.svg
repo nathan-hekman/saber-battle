@@ -1,0 +1,18 @@
+<!-- B: Impact Burst — 8 alternating rays from a central clash point -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <!-- 8 rays as triangles: apex at center (24,24), bases at edge -->
+  <!-- Blue rays: N, E, S, W -->
+  <polygon points="24,24 21,2  27,2"  fill="#1177ff"/>
+  <polygon points="24,24 46,21 46,27" fill="#1177ff"/>
+  <polygon points="24,24 27,46 21,46" fill="#1177ff"/>
+  <polygon points="24,24 2,27  2,21"  fill="#1177ff"/>
+  <!-- Red rays: NE, SE, SW, NW -->
+  <polygon points="24,24 38,4  46,12" fill="#dd2200"/>
+  <polygon points="24,24 46,36 38,44" fill="#dd2200"/>
+  <polygon points="24,24 10,44 2,36"  fill="#dd2200"/>
+  <polygon points="24,24 2,12  10,4"  fill="#dd2200"/>
+  <!-- Bright center core -->
+  <circle cx="24" cy="24" r="8"  fill="white" opacity="0.15"/>
+  <circle cx="24" cy="24" r="5"  fill="white" opacity="0.5"/>
+  <circle cx="24" cy="24" r="2.5" fill="white"/>
+</svg>

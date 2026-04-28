@@ -1,0 +1,34 @@
+<!-- E: Full wordmark — icon + SABER / BATTLE stacked text -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 80">
+  <!-- Mini crossed-saber icon (24x24 at center-left) -->
+  <g transform="translate(24,24)">
+    <!-- Red saber -->
+    <g transform="rotate(45 0 0)">
+      <rect x="-11" y="-2" width="11" height="4" fill="#cc2200" rx="1"/>
+      <rect x="-14" y="-4" width="3" height="8" fill="#8898c8" rx="1.5"/>
+      <rect x="-19" y="-2.5" width="5" height="5" fill="#3a4880" rx="0.8"/>
+    </g>
+    <!-- Blue saber -->
+    <g transform="rotate(-45 0 0)">
+      <rect x="-11" y="-2" width="11" height="4" fill="#1177ff" rx="1"/>
+      <rect x="-14" y="-4" width="3" height="8" fill="#8898c8" rx="1.5"/>
+      <rect x="-19" y="-2.5" width="5" height="5" fill="#3a4880" rx="0.8"/>
+    </g>
+    <circle cx="0" cy="0" r="3" fill="white"/>
+  </g>
+
+  <!-- SABER text -->
+  <text x="56" y="32"
+    font-family="Orbitron, 'Courier New', monospace"
+    font-weight="900" font-size="26" fill="#ffffff"
+    letter-spacing="4">SABER</text>
+
+  <!-- BATTLE text (slightly smaller, accent color) -->
+  <text x="58" y="58"
+    font-family="Orbitron, 'Courier New', monospace"
+    font-weight="700" font-size="22" fill="#5599ff"
+    letter-spacing="5">BATTLE</text>
+
+  <!-- Accent separator line -->
+  <line x1="56" y1="40" x2="155" y2="40" stroke="#334488" stroke-width="1" opacity="0.6"/>
+</svg>

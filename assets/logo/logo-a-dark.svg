@@ -1,0 +1,19 @@
+<!-- Transparent-bg variant for placing on dark surfaces -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <!-- Red saber -->
+  <g transform="rotate(45 24 24)">
+    <rect x="7" y="21.5" width="9" height="5" fill="#4a58a0" rx="1"/>
+    <rect x="14" y="18" width="4" height="12" fill="#99aadd" rx="2"/>
+    <rect x="18" y="22" width="22" height="4" fill="#ee3311" rx="1.5"/>
+    <rect x="18" y="22.3" width="22" height="1.8" fill="#ff9977" rx="0.9" opacity="0.6"/>
+  </g>
+  <!-- Blue saber -->
+  <g transform="rotate(-45 24 24)">
+    <rect x="7" y="21.5" width="9" height="5" fill="#4a58a0" rx="1"/>
+    <rect x="14" y="18" width="4" height="12" fill="#99aadd" rx="2"/>
+    <rect x="18" y="22" width="22" height="4" fill="#2288ff" rx="1.5"/>
+    <rect x="18" y="22.3" width="22" height="1.8" fill="#88ddff" rx="0.9" opacity="0.6"/>
+  </g>
+  <polygon points="24,19 29,24 24,29 19,24" fill="white"/>
+  <circle cx="24" cy="24" r="2.2" fill="white"/>
+</svg>

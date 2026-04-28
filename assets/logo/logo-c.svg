@@ -1,0 +1,9 @@
+<!-- C: Dueling Chevrons — two opposing arrow-wedges meeting at center -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 48">
+  <!-- Blue chevron pointing right (from left) -->
+  <path d="M 4 8 L 30 24 L 4 40 L 10 40 L 34 24 L 10 8 Z" fill="#1177ff"/>
+  <!-- Red chevron pointing left (from right) -->
+  <path d="M 52 8 L 26 24 L 52 40 L 46 40 L 22 24 L 46 8 Z" fill="#dd2200"/>
+  <!-- Overlap zone at center: bright white slash -->
+  <polygon points="28,18 30,18 30,30 28,30" fill="white" opacity="0.9"/>
+</svg>
