@@ -22,21 +22,22 @@ const COLORS = {
 };
 
 export class Game {
-  constructor(canvas, mode = 'ai') {
+  // net: pre-connected NetworkManager instance (for online modes), or null for AI
+  constructor(canvas, mode = 'ai', net = null) {
     this.canvas = canvas;
     this.ctx = canvas.getContext('2d');
     this.mode = mode; // 'ai' | 'host' | 'guest'
 
     this.playerSaber = new Saber(COLORS.player.core, COLORS.player.glow, 'player');
     this.opponentSaber = new Saber(
-      mode === 'host' ? COLORS.ai.core : COLORS.guest.core,
-      mode === 'host' ? COLORS.ai.glow : COLORS.guest.glow,
+      mode === 'guest' ? COLORS.guest.core : COLORS.ai.core,
+      mode === 'guest' ? COLORS.guest.glow : COLORS.ai.glow,
       'opponent'
     );
 
     this.smoke = new SmokeSystem(canvas);
     this.ai = mode === 'ai' ? new AIOpponent(this.opponentSaber) : null;
-    this.net = (mode === 'host' || mode === 'guest') ? new NetworkManager() : null;
+    this.net = net;
 
     this.mouseX = canvas.width / 2;
     this.mouseY = canvas.height / 2;

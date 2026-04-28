@@ -173,9 +173,7 @@ document.getElementById('btn-create-room').addEventListener('click', async () =>
       await countdown();
       const canvas = document.getElementById('canvas');
       if (currentGame) currentGame.stop();
-      currentGame = new Game(canvas, 'host');
-      currentGame.net = net;
-      currentGame._wireNetwork();
+      currentGame = new Game(canvas, 'host', net);
       currentGame.start();
     });
   } catch (e) {
@@ -200,9 +198,7 @@ document.getElementById('btn-join').addEventListener('click', async () => {
     await countdown();
     const canvas = document.getElementById('canvas');
     if (currentGame) currentGame.stop();
-    currentGame = new Game(canvas, 'guest');
-    currentGame.net = net;
-    currentGame._wireNetwork();
+    currentGame = new Game(canvas, 'guest', net);
     currentGame.start();
   } catch (e) {
     status.textContent = 'Failed: ' + (e.message || 'Invalid code');
@@ -227,9 +223,7 @@ document.getElementById('btn-random-match').addEventListener('click', async () =
       await countdown();
       const canvas = document.getElementById('canvas');
       if (currentGame) currentGame.stop();
-      currentGame = new Game(canvas, net.role);
-      currentGame.net = net;
-      currentGame._wireNetwork();
+      currentGame = new Game(canvas, net.role, net);
       currentGame.start();
     });
   } catch (e) {
